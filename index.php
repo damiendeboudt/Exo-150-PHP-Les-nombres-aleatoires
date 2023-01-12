@@ -5,13 +5,17 @@
  */
 
 // TODO Votre code ici.
+$random = rand(0, 50);
+echo "le nombre est $random <br>";
 
 
 
+echo "<br><br>";
 /**
  * 2. Générez un nombre aléatoire compris entre 50 et getrandmax, affichez le résultat dans un nouveau <p>
  */
-
+$random2 = rand(50, getrandmax());
+echo "<p>le 2eme nombre aleatoire est $random2 <br>";
 // TODO Votre code ici.
 
 
@@ -20,9 +24,14 @@
  * ==> si le nombre est inférieur ou égal à 25, affichez : vous avez gagné ( dans un nouveau <p> )
  * ==> si ce n'est pas le cas, affichez : vous avez perdu ( dans un nouveau <p> )
  */
-
+echo "<br><br>";
 // TODO Votre code ici.
-
+$random3 = rand(0, 50);
+    if ($random3 <= 25) {
+        echo "<p>Vous avez gagné";
+    } else {
+        echo "<p>Vous avez perdu";
+    }
 
 /**
  * 4. Créez une fonction qui génère un nombre aléatoire compris entre $max et $min ( paramètres ).
@@ -33,6 +42,7 @@
 // TODO Votre code ici.
 
 
+  $randomNumberTest3 = rand($min, $max);
 
 
 
