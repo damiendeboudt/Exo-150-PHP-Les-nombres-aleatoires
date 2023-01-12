@@ -41,10 +41,17 @@ $random3 = rand(0, 50);
 
 // TODO Votre code ici.
 
+function randomTest ($min, $max) {
+    $randomNumbertest = rand($min, $max);
+    if ($randomNumbertest > $max - 100 && $randomNumbertest < $max) {
+        randomTest($min, $max);
+    } else {
+        //return($randomNumbertest);
+        echo "<p>$randomNumbertest";
+    }
+}
 
-  $randomNumberTest3 = rand($min, $max);
-
-
+randomTest(12, 300);
 
 
 
